@@ -55,6 +55,7 @@ window.onload = function () {
 			}
 			deck = new rolls();
 			document.getElementById("tilnew").innerHTML = deck.length();
+			document.getElementById("button").onclick(); //recurse so that we auto roll one time
 		}
 		
 	}
