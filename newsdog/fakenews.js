@@ -13,9 +13,10 @@ window.onload = function () {
 		model.summary();
    		
      	let pred = await model.predict(tf.tensor2d(feats, [1, 1020]), {batchSize:1}).print();
-     	//returns a prediction [prob real, prob fake]
+     	
 
-     	console.log(pred)
+     	console.log(pred);
+	console.log("Interpret as : [predicted 'real' probability, predicted 'fake' probability]");
 	});
 
 
