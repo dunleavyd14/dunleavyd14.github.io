@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NewsDog</title>
+		<!--  bootstrap things -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
+
+		<link href="fakenews.css" rel="stylesheet">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- latest tfjs -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <!-- latest p5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+
+    <script src="fakenews.js"></script>
+
+
+
+	</head>
+	<body>
+		<nav class="navbar navbar-default ">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="fakenews.html">NewsDog</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="fakenews.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            
+              
+            </li>
+          </ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="page-header text-center">
+  		<h1 id = "title"><img width = "200" height = "200" src="img/sniff.jpg"> NewsDog</h1>
+	</div>
+	<form>
+	<div class="form-group" id = "article-text-wrapper">
+    	<label for="exampleFormControlTextarea1">Paste Article Text Here</label>
+    	<textarea class="form-control" id="article-text" rows="15"></textarea>
+    	<button class = "btn" id = "article-text-submit" type = "button">Sniff</button>
+      <button class = "btn" id = "article-text-clear" type = "button">Clear</button>
+  	</div>
+  	</form>
+
+    
+	</body>
+	
+
+
+</html>
