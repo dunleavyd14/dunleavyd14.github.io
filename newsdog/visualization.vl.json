@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+  "description": "Model output on article text.",
+  "data": {
+    "values": [
+      {
+        "veracity": "fact-based",
+        "confidence": 0.85
+      },
+      {
+        "veracity": "sensationalized",
+        "confidence": 0.15
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "veracity",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "confidence",
+      "type": "quantitative"
+    }
+  }
+}
