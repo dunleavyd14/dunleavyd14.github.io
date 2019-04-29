@@ -12,11 +12,11 @@ window.onload = function () {
 		model = await tf.loadLayersModel("https://raw.githubusercontent.com/dunleavyd14/fakenewsNeuralNet/master/model4.json");
 		model.summary();
    		
-     	let pred = await model.predict(tf.tensor2d(feats, [1, 1020]), {batchSize:1}).print();
+     		let pred = await model.predict(tf.tensor2d(feats, [1, 1020]), {batchSize:1}).print();
      	
 
-     	console.log(pred);
-	console.log("Interpret as : [predicted 'real' probability, predicted 'fake' probability]");
+     		console.log(pred);
+		console.log("Interpret as : [predicted 'real' probability, predicted 'fake' probability]");
 	});
 
 
@@ -56,7 +56,7 @@ window.onload = function () {
 	
 
 }
-function setup() {
+function setup() {//template for future p5.js barchart
 
   var data = [105, 212, 158, 31, 98, 54];
   var width = 200, // canvas width and height
