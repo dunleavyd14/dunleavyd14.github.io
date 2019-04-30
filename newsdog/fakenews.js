@@ -6,7 +6,7 @@ window.onload = function () {
 	
 
 	let pass2Model = (async (feats) => {
-		model = await tf.loadLayersModel("https://raw.githubusercontent.com/dunleavyd14/fakenewsNeuralNet/master/model4.json");
+		model = await tf.loadLayersModel("https://raw.githubusercontent.com/dunleavyd14/fakenewsNeuralNet/master/json/model.json");
 		model.summary();
    		
      	let pred = await model.predict(tf.tensor2d(feats, [1, 1020]), {batchSize:1}).dataSync();
