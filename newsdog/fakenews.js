@@ -69,7 +69,7 @@ window.onload = function () {
 			mark: 'bar',
 			encoding: {
 			  y: {field: 'smell', type: 'ordinal'},
-			  x: {field: 'confidence', type: 'quantitative'}
+			  x: {field: 'confidence', type: 'quantitative'}, "scale": {"domain": [0,1]}
 			}
 		};
 		vegaEmbed('#vega', vegaspec);
