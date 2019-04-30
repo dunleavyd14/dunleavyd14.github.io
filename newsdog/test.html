@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embedding Vega-Lite</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.3.5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.2.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@4.0.0"></script>
+  </head>
+  <body>
+    <div id="vis"></div>
+
+    <script type="text/javascript">
+      var yourVlSpec = {
+        $schema: 'https://vega.github.io/schema/vega-lite/v2.0.json',
+        description: 'A simple bar chart with embedded data.',
+        data: {
+          values: [
+            {veracity: 'fact-based', confidence: .5},
+            {veracity: 'sensationalized', confidence: .5}
+          ]
+        },
+        mark: 'bar',
+        encoding: {
+          y: {field: 'veracity', type: 'ordinal'},
+          x: {field: 'confidence', type: 'quantitative'}
+        }
+      };
+      vegaEmbed('#vis', yourVlSpec);
+    </script>
+  </body>
+</html>
+
