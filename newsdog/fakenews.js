@@ -53,7 +53,12 @@ window.onload = function () {
 		var vegaspec = {
 			$schema: 'https://vega.github.io/schema/vega-lite/v2.0.json',
 			description: 'A simple bar chart with embedded data.',
-			width: 200,
+			
+			"width": 300,
+			"autosize": {
+				"type": "fit",
+				"contains": "padding"
+			}
 			height: 200,
 			data: {
 			  values: [
