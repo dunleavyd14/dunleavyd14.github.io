@@ -58,7 +58,7 @@ window.onload = function () {
 			"autosize": {
 				"type": "fit",
 				"contains": "padding"
-			}
+			},
 			height: 200,
 			data: {
 			  values: [
