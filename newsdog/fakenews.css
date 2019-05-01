@@ -31,3 +31,8 @@ h1 {
 	margin: auto;
 	text-align: center;
 }
+
+#about {
+	margin-left: 15%;
+	margin-right: 15%;
+}
