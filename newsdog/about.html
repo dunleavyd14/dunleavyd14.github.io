@@ -38,8 +38,15 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <div>
-      <p>NewsDog queries a neural network that was created in TensorFlow and cross-compiled to JavaScript. Visualizations use Vega. This website was designed in BootStrap.
+    <div id = "#about">
+      <p>
+	      To use NewsDog, simply copy and paste the text of a news article. NewsDog will 'sniff' the article and see if it 'smells' fact-based or sensationalized.
+	      NewsDog will show smells in a visualization below the sniff button after an article is submitted. Training data was mostly political news, so NewsDog might get
+	      confused if you ask him to sniff something else. 
+	      
+	      How it works:
+	      NewsDog queries a neural network that was created in TensorFlow and cross-compiled to JavaScript. TensorFlow.js allows this site to download a model when it loads,
+	      and accept input from the site. NewsDog uses no server side code to make determinations on articles! Visualizations use Vega-Lite. This website was designed in BootStrap.
       </p>
     </div>
 	</body>
