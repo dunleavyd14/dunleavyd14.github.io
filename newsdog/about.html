@@ -6,11 +6,11 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    		<link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<link href="fakenews.css" rel="stylesheet">
+		<link rel="stylesheet" href="fakenews.css" >
 
 	</head>
 	<body>
@@ -38,15 +38,20 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <div id = "#about" class = "col">
+    <div id = "about" class = "col">
       <p>
 	      To use NewsDog, simply copy and paste the text of a news article. NewsDog will 'sniff' the article and see if it 'smells' fact-based or sensationalized.
 	      NewsDog will show smells in a visualization below the sniff button after an article is submitted. Training data was mostly political news, so NewsDog might get
 	      confused if you ask him to sniff something else. 
-	      
+      </p>
+     <p>
 	      How it works:
 	      NewsDog queries a neural network that was created in TensorFlow and cross-compiled to JavaScript. TensorFlow.js allows this site to download a model when it loads,
 	      and accept input from the site. NewsDog uses no server side code to make determinations on articles! Visualizations use Vega-Lite. This website was designed in BootStrap.
+      </p>
+
+      <p>
+        The neural network behind NewsDog was trained on over 70,000 filtered articles from <a href = "https://www.kaggle.com/snapcrack/all-the-news">Kaggle</a> <a href = "https://www.kaggle.com/c/fake-news/data"> datasets</a>.   The data was transformed into counts of the 1020 most common words from the 'real' news dataset. This approach aims to prevent the model from simply learning which news sites to accept and reject, but rather evaluate how colorful the language is in an article. This approach achieved approximately 95% accuracy on validation and test data.
       </p>
     </div>
 	</body>
